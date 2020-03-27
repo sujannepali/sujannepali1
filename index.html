@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+  <meta charset="utf-8" />
+  <title>Mashup Assignment Sujan Nepali</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <!-- styles -->
+  <link rel="stylesheet" href="http://owsgip.itc.utwente.nl/base/ExtJS/resources/css/ext-all.css"/>
+  <link rel="stylesheet" href="http://owsgip.itc.utwente.nl/base/GeoExt/resources/css/geoext-all.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  
+  <!-- ExtJS libraries -->
+  <script src="http://owsgip.itc.utwente.nl/base/ExtJS/adapter/ext/ext-base.js"></script>
+  <script src="http://owsgip.itc.utwente.nl/base/ExtJS/ext-all.js"></script>
+ 
+  <!-- Geo Scripts -->
+  <script src="http://maps.google.com/maps/api/js?v=3.6&sensor=false"></script>
+  <script src="http://owsgip.itc.utwente.nl/base/OpenLayers/OpenLayers.js"></script>
+  <script src="http://owsgip.itc.utwente.nl/base/GeoExt/lib/GeoExt.js"></script>
+ 
+  <!-- the control script -->
+  <script src="scripts/control.js"></script>
+  
+</head>
+ 
+<body>
+  <!-- here goes the content of the page -->
+  <header id="banner" class="bodygroup">
+    <figure> <img src="images/nbpiLogo.gif" alt="ITC" /> </figure>
+    <h1><a href="#">Nepal Banepa Polytechnic Institute <strong><ol type="A">Banepa 05, Kavrepalanchok</ol></strong></a></h1>
+    <nav><ul>
+      <li id="home-li" class="active"><a href="#" onclick="switchDivs('home-'); return false;">Home</a></li>
+      <li id="News-li"><a href="#" onclick="switchDivs('News-'); return false;">News</a></li>
+      <li id="contact-li"><a href="#" onclick="switchDivs('contact-'); return false;">Contact</a></li>
+	  <li id="Program-li"><a href="#" onclick="switchDivs('Program-'); return false;">Program</a></li>
+    </ul></nav>
+  </header>
+ 
+ <div id="home-div">
+  <section id="first" class="bodygroup">
+    <hgroup>
+      <h2>Spatial Data Viewer</h2>
+      <h3>Using Google maps, OpenStreetMap and OGC services</h3>
+    </hgroup>
+    <article>
+      <div id="viewer-panel"></div>
+    </article>
+  </section> <!--first -->
+ 
+  <section id="second" class="bodygroup">
+    <hgroup>
+      <h2>About Us</h2>
+      <h3>NBPI</h3>
+    </hgroup>
+    <article>
+      <!-- content area -->
+	  <p>Nepal Banepa Polytechnic Institute (NBPI) is one of the constituent institutes of the Council for 
+	  Technical Education and Vocational Training (CTEVT). NBPI was established in 2008 A.D. (2065 V.S.) in Banepa Municipality -5, 
+	  Banepa, Kavrepalanchok district. It was built under the aid of government of People’s Republic of China.  
+	  It occupies the area of 52000 square metre (102 Ropanies / 5.2 Hectors) lands provided by Banepa Municipality.</p>
+        <p>NBPI is the first CTEVT constituent polytechnic institute to operate diploma in engineering and hotel management curricular programs. 
+		It aims to provide accessible and affordable technical education in pleasing environment. NBPI’s outstanding performance and steady progress 
+		are being achieved through continued efforts of qualified and competent teachers, cooperative administrative staffs, management team, and 
+		devoted and disciplined students. NBPI continuously focuses on dedication, devotion, diligence, responsive and discipline.</p>
+        <p>At present, the institute has been operating five long-term diploma level curricular programs: Diploma in Information Technology (DIT),
+		Diploma in Electrical Engineering (DEE), Diploma in Hotel Management (DHM),  Diploma in Civil Engineering (DCE) 
+		and Diploma in Geomatics Engineering (DGE). In addition, one event Diploma in Hotel Management curricular program has been 
+		annexed from the current fiscal year 2075/076 under the scheme of Special Technical Education Scholarship Program 2075.   
+		Similarly, it has been conducting  vocational training programs based on the needs assessment.</p>
+    </article>
+  </section>
+ </div> <!-- home -->
+ 
+ <div id="News-div" class="hidediv">
+    <section id="third" class="bodygroup">
+      <hgroup>
+        <h2>NBPI News</h2>
+        <h3>Any news related to this institute will be published here</h3>
+      </hgroup>
+      <article>
+        <!-- News content goes here -->
+      </article>
+    </section>
+  </div>  <!-- News -->
+ 
+  <div id="contact-div" class="hidediv">
+    <section id="fourth" class="bodygroup">
+      <hgroup>
+        <h2>Contact Details</h2>
+        <h3>Feel free to contact us for any query</h3>
+      </hgroup>
+      <article>
+		Nepal Banepa Polytechnic Institute
+		Banepa-5, Kavre, Nepal
+		<li>Tel: 977 11 660625, 660867, 660867</li>
+		<li>Fax: 977 11 660625</li>
+		<li>Email: nbpi.edu@gmail.com</li>
+      <!-- contact content goes here -->
+      </article>
+    </section>
+  </div>  <!-- contact -->
+  
+  <div id="Program-div" class="hidediv">
+    <section id="fifth" class="bodygroup">
+      <hgroup>
+        <h2>Department</h2>
+        <h3>Geomatics Engineering</h3>
+		<h3>Civil Engineering</h3>
+		<h3>Electrical Engineering</h3>
+		<h3>Information Technology</h3>
+		<h3>Hotel Management</h3>
+		
+      </hgroup>
+      <article>
+        <!-- Program content goes here -->
+      </article>
+    </section>
+  </div>  <!-- Program -->
+  
+  <footer class="bodygroup">
+    <p>Updated on March 20th, 2020, Modified by Sujan Nepali;<br><a href="http://nbpi.edu.np/">NBPI Administration</a></p>
+  </footer>
+</body>
+ 
+</html>
